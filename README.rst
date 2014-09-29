@@ -7,7 +7,7 @@ Installation
 ------------
 
 ```bash
-$ pip install django-smtt-alternative
+$ pip install django-smtp-alternative
 ```
 
 Usage
@@ -24,7 +24,8 @@ settings.py
 
 Following settings are not required, if some is not defined or set to None, is used default settings acoording to primary SMTP configuration.
 
-::  
+.. code:: python
+
   ALTERNATIVE_EMAIL_HOST_USER = 'username'
   ALTERNATIVE_EMAIL_HOST_PASSWORD = 'password'
   ALTERNATIVE_EMAIL_USE_TLS = False
