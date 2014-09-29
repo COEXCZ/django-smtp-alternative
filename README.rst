@@ -6,9 +6,10 @@ Django email backend providing sending with alternative SMTP server if primary s
 Installation
 ------------
 
-```bash
-$ pip install django-smtp-alternative
-```
+.. code:: bash
+
+    pip install django-smtp-alternative
+
 
 Usage
 -----
