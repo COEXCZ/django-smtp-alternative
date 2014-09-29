@@ -14,7 +14,7 @@ Installation
 Usage
 -----
 
-settings.py
+Edit settings.py
 
 .. code:: python
 
@@ -23,7 +23,7 @@ settings.py
   ALTERNATIVE_EMAIL_HOST = 'alternative.host'
   ALTERNATIVE_EMAIL_PORT = '25'
 
-Following settings are not required, if some is not defined or set to None, is used default settings acoording to primary SMTP configuration.
+Following settings are not required, if some is not defined or set to None, is used default settings acording to primary SMTP configuration.
 
 .. code:: python
 
