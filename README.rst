@@ -15,9 +15,10 @@ Usage
 
 settings.py
 
-::
+.. code:: python
+
   EMAIL_BACKEND = "django_smtp_alternative.EmailBackend"
-  
+
   ALTERNATIVE_EMAIL_HOST = 'alternative.host'
   ALTERNATIVE_EMAIL_PORT = '25'
 
