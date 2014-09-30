@@ -12,16 +12,13 @@ class EmailBackend(SmtpEmailBackend):
         host = getattr(settings, 'ALTERNATIVE_EMAIL_HOST', None)
         port = getattr(settings, 'ALTERNATIVE_EMAIL_PORT', None)
 
-        if host is not None and port is not None and host != self.host and port != self.port:
-            username = getattr(settings, 'ALTERNATIVE_EMAIL_HOST_USER', None)
-            password = getattr(settings, 'ALTERNATIVE_EMAIL_HOST_PASSWORD', None)
-            use_tls = getattr(settings, 'ALTERNATIVE_EMAIL_USE_TLS', None)
+        if host is not None and port is not None:
+            kwargs['username'] = getattr(settings, 'ALTERNATIVE_EMAIL_HOST_USER', self.username)
+            kwargs['password'] = getattr(settings, 'ALTERNATIVE_EMAIL_HOST_PASSWORD', self.password)
+            kwargs['use_tls'] = getattr(settings, 'ALTERNATIVE_EMAIL_USE_TLS', self.use_tls)
             self._alternative_backend = SmtpEmailBackend(
                 host=host,
                 port=port,
-                username=username,
-                password=password,
-                use_tls=use_tls,
                 **kwargs
             )
         else:

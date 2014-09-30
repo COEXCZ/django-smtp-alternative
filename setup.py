@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 
-PACKAGE = "django-smtp-alternative"
+PACKAGE = "django_smtp_alternative"
 NAME = "django-smtp-alternative"
 DESCRIPTION = "Django email backend providing sending with alternative SMTP server if primary server fails"
 AUTHOR = "Jan Češpivo, COEX CZ s.r.o (http://www.coex.cz)"
 AUTHOR_EMAIL = "jan.cespivo@gmail.com"
-URL = "https://github.com/COEXCZ/django_smtp_alternative"
-VERSION = '0.0.1a'
+URL = "https://github.com/COEXCZ/django-smtp-alternative"
+VERSION = '1.0.0'
 LICENSE = "LGPLv3"
 
 setup(
