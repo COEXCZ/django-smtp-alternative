@@ -1,4 +1,4 @@
-django_smtp_alternative
+django-smtp-alternative
 =======================
 
 Django email backend providing sending with alternative SMTP server if primary server fails
